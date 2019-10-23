@@ -1,0 +1,29 @@
+.stack-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: .9;
+
+  .icon {
+    color: #fff;
+    height: 60px;
+  }
+
+  &__title {
+    margin-top: 15px;
+  }
+
+  &__know-level {
+    margin-top: 10px;
+    font-size: 90%;
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+
+  & + .stack-item {
+    margin-left: 20px;
+  }
+}

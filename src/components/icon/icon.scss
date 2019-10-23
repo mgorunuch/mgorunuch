@@ -1,0 +1,12 @@
+.icon {
+  color: #000;
+  height: 20px;
+  width: auto;
+
+  > svg {
+    display: block;
+    fill: currentColor;
+    height: 100%;
+    width: auto;
+  }
+}

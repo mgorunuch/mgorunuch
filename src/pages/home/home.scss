@@ -1,0 +1,30 @@
+.home-page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  z-index: 2;
+}
+
+.home-page {
+  padding: 20px;
+
+  &__creator {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &__creator-image {
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+
+  &__creator-name {
+    font-size: 2rem;
+  }
+}

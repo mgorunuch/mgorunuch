@@ -1,0 +1,20 @@
+.social-link {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  .icon {
+    color: #fff;
+    margin-right: 10px;
+  }
+
+  + .social-link {
+    margin-left: 15px;
+  }
+}
