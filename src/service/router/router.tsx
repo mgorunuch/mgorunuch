@@ -2,6 +2,8 @@ import React from 'react';
 import { Route, Redirect, Switch, BrowserRouter as Router } from 'react-router-dom';
 import NotFound from "../../pages/not-found/not-found";
 import Home from "../../pages/home/home";
+import LifeWheel from "../../pages/life-wheel/life-wheel";
+import PriorityDetector from "../../pages/priority-detector/priority-detector";
 
 class RouterContainer extends React.Component {
   render() {
@@ -10,6 +12,8 @@ class RouterContainer extends React.Component {
         <Router>
           <Switch>
             <Route exact path="/" component={Home} />
+            <Route exact path="/wheel" component={LifeWheel} />
+            <Route exact path="/priority" component={PriorityDetector} />
             <Route path="/404" component={NotFound} />
             <Redirect to="/404" />
           </Switch>

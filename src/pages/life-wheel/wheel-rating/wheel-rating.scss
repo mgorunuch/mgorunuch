@@ -1,0 +1,22 @@
+.wheel-rating {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__item-title {
+    margin-bottom: 5px;
+  }
+
+  &__descriptor {
+    display: block;
+    margin-bottom: 10px;
+  }
+}

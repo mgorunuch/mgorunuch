@@ -1,0 +1,12 @@
+.my-apps {
+  &__link {
+    display: block;
+    color: #fff;
+    margin-bottom: 7px;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

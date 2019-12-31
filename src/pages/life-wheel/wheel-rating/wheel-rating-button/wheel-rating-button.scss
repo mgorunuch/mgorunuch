@@ -1,0 +1,12 @@
+.wheel-rating-button {
+  background: transparent;
+  color: #fff;
+  border: solid 2px #fff;
+  cursor: pointer;
+  font-size: 18px;
+  margin-bottom: 10px;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}

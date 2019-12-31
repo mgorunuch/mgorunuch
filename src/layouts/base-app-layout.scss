@@ -1,0 +1,33 @@
+.base-app-layout {
+  padding: 20px;
+
+  &__title {
+  }
+
+  &__content {
+    width: 100%;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+    .icon {}
+  }
+
+  &__button {
+    display: flex;
+    background: transparent;
+    border: solid 0;
+    color: #fff;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+
+    .icon {
+      margin-right: 10px;
+    }
+  }
+}

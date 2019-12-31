@@ -1,0 +1,25 @@
+.life-wheel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1px;
+  margin-top: 250px;
+
+  @media screen and (max-width: 610px) {
+    .recharts-wrapper {
+      transform: scale(0.7);
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+    .recharts-wrapper {
+      transform: scale(0.6);
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    .recharts-wrapper {
+      transform: scale(0.5);
+    }
+  }
+}

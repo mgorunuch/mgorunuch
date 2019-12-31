@@ -5,6 +5,7 @@ import SocialLinks from "./social-links/social-links";
 import StackItems from "./stack-items/stack-items";
 import Creator from "./creator/creator";
 import LettersAnimation from "./letter-animation/letters-animation";
+import MyApps from "./my-apps/my-apps";
 
 class Home extends React.Component {
   render() {
@@ -18,6 +19,9 @@ class Home extends React.Component {
           </BlockItem>
           <BlockItem title="My stack">
             <StackItems />
+          </BlockItem>
+          <BlockItem title="My apps">
+            <MyApps />
           </BlockItem>
         </div>
       </div>
