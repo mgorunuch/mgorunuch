@@ -9,4 +9,4 @@ COPY package-lock.json /app
 
 #Installing all dependencies.
 RUN npm ci
-RUN npm build
+RUN npm react-scripts build
