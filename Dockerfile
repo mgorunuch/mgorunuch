@@ -9,6 +9,4 @@ COPY package-lock.json /app
 
 #Installing all dependencies.
 RUN npm ci
-
-# Running the dev server.
-CMD ["npm", "start"]
+RUN npm build
