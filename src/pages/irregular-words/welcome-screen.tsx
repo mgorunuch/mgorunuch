@@ -16,7 +16,7 @@ interface State {
 }
 
 const leftPart = 'Hello 👋 This is';
-const appName = 'Irregular words trainer 🧠';
+const appName = 'Irregular verbs trainer 🧠';
 const rightPart = '...';
 
 class WelcomeScreen extends React.Component<Props, State> {
