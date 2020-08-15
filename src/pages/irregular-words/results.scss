@@ -1,0 +1,26 @@
+.irregular-results {
+  &__answer {
+    &:not(:last-child) {
+      margin-bottom: 1em;
+    }
+  }
+
+  &__answer-form {
+    border: solid 1px #459b3a;
+    color: #459b3a;
+    padding: .3em;
+
+    &--invalid {
+      border: solid 1px #9b3a42;
+      color: #9b3a42;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 1em;
+    }
+  }
+
+  &__form {
+    font-weight: bold;
+  }
+}

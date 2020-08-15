@@ -1,0 +1,46 @@
+.irregular-welcome-screen {
+  $cursorWidth: 10px;
+  font-size: 2em;
+
+  &__text {
+    &:not(&--without-margin) {
+      display: inline-block;
+      margin-right: 1rem;
+    }
+  }
+
+  &__text-content {
+    position: relative;
+  }
+
+  &__cursor {
+    width: $cursorWidth;
+    height: 110%;
+    animation: blink infinite 800ms;
+    color: #fff;
+    display: none;
+  }
+
+  &__text-content--typing &__cursor {
+    display: inline;
+  }
+
+  &__text-content:not(&__text-content--typing) &__text:not(&__text--main) {
+    display: none;
+  }
+
+  &__left-text {}
+
+  &__app-name {
+    font-weight: bold;
+  }
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}

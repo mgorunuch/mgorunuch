@@ -1,0 +1,72 @@
+.irregular-trainer {
+  &__block {
+    min-width: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    &:not(:last-child) {
+      margin-bottom: 1em;
+    }
+  }
+
+  &__block-title {
+    font-size: 1.2em;
+    font-weight: lighter;
+    margin-bottom: 0.3em;
+  }
+
+  &__learn-word {
+    font-size: 1.7em;
+  }
+
+  &__answer-blocks {
+    display: flex;
+  }
+
+  &__answer {
+    display: flex;
+    flex-direction: column;
+
+    &:not(:last-child) {
+      margin-right: 1em;
+    }
+  }
+
+  &__answer-field {
+    margin-bottom: 0.5em;
+    background: transparent;
+    border: solid 1px;
+    color: #fff;
+    padding: .6em .3em;
+
+    &--valid {
+      color: #459b3a;
+    }
+
+    &--invalid {
+      color: #9b3a42;
+    }
+  }
+
+  &__hint-button {
+    border: solid 1px #fff;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    padding: .6em;
+  }
+}
+
+@media all and (max-width: 750px) {
+  .irregular-trainer {
+    &__answer-blocks {
+      flex-direction: column;
+    }
+
+    &__answer:not(:last-child) {
+      margin-right: 0;
+      margin-bottom: 1em;
+    }
+  }
+}

@@ -1,0 +1,58 @@
+.choose-words {
+  padding: 2em;
+
+  &__block {
+    &:not(:last-child) {
+      margin-bottom: 1em;
+    }
+
+    border: solid 1px #fff;
+    padding: 1em;
+  }
+
+  &__block-header {
+    margin-bottom: 0.5em;
+    display: flex;
+  }
+
+  &__block-title {
+    font-weight: bold;
+    justify-self: flex-start;
+  }
+
+  &__block-additional {
+    justify-self: flex-end;
+  }
+
+  &__block-nothing, &__word {
+    display: inline-block;
+    padding: 0.8em;
+    margin: 0.2em;
+    font-size: 1em;
+    color: #fff;
+  }
+
+  &__word {
+    cursor: pointer;
+    border: 0;
+    background: transparent;
+
+    &--selected {
+      color: #459b3a;
+      font-weight: bold;
+    }
+  }
+
+  &__block-footer {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__continue-button {
+    border: solid 1px #fff;
+    background: transparent;
+    color: #fff;
+    padding: 1em;
+    cursor: pointer;
+  }
+}

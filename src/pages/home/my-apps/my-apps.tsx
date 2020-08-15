@@ -8,6 +8,7 @@ class MyApps extends React.Component {
       <div className="my-apps">
         <Link className="my-apps__link" to="wheel">- Life wheel</Link>
         <Link className="my-apps__link" to="priority">- Life priorities</Link>
+        <Link className="my-apps__link" to="irregular-words">- Irregular words trainer</Link>
       </div>
     );
   }

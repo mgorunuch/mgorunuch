@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@igor-gerasimovich/bem-helper": "^1.0.2",
     "@types/react-syntax-highlighter": "^11.0.1",
     "@types/recharts": "^1.8.4",
     "express": "^4.17.1",
