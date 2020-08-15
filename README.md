@@ -22,7 +22,7 @@ Who am I?
 - [Typescript OOP. Observer.](https://medium.com/@mgorunuch.igor/typescript-oop-observer-ac60ca6cb264)
 - [4 problems when working with API architecture in typescript](https://medium.com/@mgorunuch.igor/4-problems-when-working-with-api-architecture-in-typescript-e5d8da41156c)
 
-📖 Roard to the Neuralink
+📖 Road to the Neuralink
 ------
 - [Week 0. Welcome. Road to the Neurolink.](https://medium.com/@mgorunuch.igor/week-0-welcome-road-to-the-neurolink-bf5603257546)
 - [Week 1. Vacancy overview. Road to the Neurolink.](https://medium.com/@mgorunuch.igor/week-1-vacancy-overview-road-to-the-neurolink-1f14bb9198c9)
