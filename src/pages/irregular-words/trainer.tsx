@@ -321,6 +321,9 @@ class Trainer extends React.Component<Props, State> {
     const allAnswered = answ1check && answ2check && answ3check;
     const allHasValue = isAnsw1HasValue && isAnsw2HasValue && isAnsw3HasValue;
 
+    const edForms = ['wetted', 'learned', 'dreamed'];
+    const isEdFormSorry = [answ1val, answ2val, answ3val].some(v => edForms.includes(v));
+
     return (
       <div className={bem.block()}>
         <Block bem={bem} title="Word">
@@ -349,6 +352,7 @@ class Trainer extends React.Component<Props, State> {
           </div>
         </Block>
         <Block title="Actions" bem={bem}>
+          {isEdFormSorry && <div className={bem.element('sorry-block')}>🙇 Sorry wetted, learned, dreamed is not supported. Please, use anouther form.</div>}
           {!allHasValue && <div>First of all you need to answer...</div>}
           {
             allHasValue &&
