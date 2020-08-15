@@ -158,9 +158,48 @@ class Trainer extends React.Component<Props, State> {
     }
   };
 
+  proceedMultValue = (val: string, resVal: string) => {
+    let vals = val.split(' ')
+      .map(v => v.split('.'))
+      .reduce((a,b) => a.concat(b), [])
+      .map(v => v.split(','))
+      .reduce((a,b) => a.concat(b), [])
+      .filter(Boolean);
+
+    let resVals = resVal.split(', ');
+    const resValsMap: Map<string, number> = new Map<string, number>();
+    resVals.forEach((v, i) => resValsMap.set(v, i));
+
+    const res = vals.sort((a, b) => {
+      let aIdx = resValsMap.get(a);
+      let bIdx = resValsMap.get(b);
+
+      if (aIdx === undefined && bIdx === undefined) {
+        return 0;
+      }
+
+      if (aIdx === undefined) {
+        return 1;
+      }
+
+      if (bIdx === undefined) {
+        return -1;
+      }
+
+      return aIdx < bIdx ? -1 : 1;
+    });
+
+    return res.join(', ');
+  };
+
   checkAnswers = (validIDX: Array<1 | 2 | 3>) => {
     this.setState((state) => {
-      const {questions} = state;
+      const {
+        questions,
+        answ1val,
+        answ2val,
+        answ3val,
+      } = state;
 
       const q = questions.slice().shift();
       if (!q) {
@@ -171,22 +210,37 @@ class Trainer extends React.Component<Props, State> {
       const has2 = validIDX.includes(2);
       const has3 = validIDX.includes(3);
 
+      let val1 = answ1val;
       if (has1 && this.answ1.current) {
-        q.answers[0] = this.answ1.current.value;
+        val1 = this.answ1.current.value.toLowerCase().trim();
+        val1 = this.proceedMultValue(val1, q.word.forms[0])
+
+        q.answers[0] = val1;
       }
 
+      let val2 = answ2val;
       if (has2 && this.answ2.current) {
-        q.answers[1] = this.answ2.current.value;
+        val2 = this.answ2.current.value.toLowerCase().trim();
+        val2 = this.proceedMultValue(val2, q.word.forms[1])
+
+        q.answers[1] = val2;
       }
 
+      let val3 = answ3val;
       if (has3 && this.answ3.current) {
-        q.answers[2] = this.answ3.current.value;
+        val3 = this.answ3.current.value.toLowerCase().trim();
+        val3 = this.proceedMultValue(val3, q.word.forms[2])
+
+        q.answers[2] = val3;
       }
 
       return {
         answ1check: has1 ? true : state.answ1check,
         answ2check: has2 ? true : state.answ2check,
         answ3check: has3 ? true : state.answ3check,
+        answ1val: val1,
+        answ2val: val2,
+        answ3val: val3,
         questions: [
           q,
           ...questions.slice(1),
