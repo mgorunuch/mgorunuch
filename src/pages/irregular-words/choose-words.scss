@@ -67,5 +67,10 @@
   &__block-notes {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+  }
+
+  &__note-word {
+    margin: 0.5em 1em 0.5em 0;
   }
 }

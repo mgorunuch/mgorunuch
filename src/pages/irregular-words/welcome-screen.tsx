@@ -35,6 +35,19 @@ class WelcomeScreen extends React.Component<Props, State> {
     this.initTyper();
   }
 
+  skipAnimation = () => {
+    const {
+      interval,
+    } = this.state;
+    clearInterval(interval);
+
+    let newInterval = setInterval(this.tickTyper, 10);
+
+    this.setState({
+      interval: newInterval,
+    })
+  };
+
   initTyper = () => {
     const interval = setInterval(this.tickTyper, 100);
 
@@ -121,6 +134,7 @@ class WelcomeScreen extends React.Component<Props, State> {
           <span className={bem.element('text', 'without-margin')}>{$dots}</span>
           <span className={bem.element('cursor')}>|</span>
         </div>
+        {!completed && <button onClick={() => this.skipAnimation()} type="button" className={bem.element('skip-button')}>skip animation...</button>}
       </div>
     )
   }

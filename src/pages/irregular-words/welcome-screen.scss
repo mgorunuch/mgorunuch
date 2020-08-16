@@ -9,10 +9,6 @@
     }
   }
 
-  &__text-content {
-    position: relative;
-  }
-
   &__cursor {
     width: $cursorWidth;
     height: 110%;
@@ -33,6 +29,14 @@
 
   &__app-name {
     font-weight: bold;
+  }
+
+  &__skip-button {
+    width: 100%;
+    background: transparent;
+    border: solid 0;
+    color: darken(#fff, .3);
+    cursor: pointer;
   }
 }
 

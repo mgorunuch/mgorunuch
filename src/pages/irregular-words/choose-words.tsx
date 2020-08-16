@@ -138,7 +138,12 @@ class ChooseWords extends React.Component<Props, State> {
     return (
       <div className={bem.block()}>
         <div className={bem.element(['block-notes', 'block'])}>
-          This app used in browser memory. I am recommend you to use one browser every time you trained or install website as application to store your results.
+          <div>This app used in browser memory. I am recommend you to use one browser every time you trained or install website as application to store your results.</div>
+          <div style={{display: 'flex', flexWrap: 'wrap'}}>
+            <div className={bem.element('note-word')}><Word className={bem.element('word')} onClick={() => undefined}>be</Word> - you not trained 3+ times</div>
+            <div className={bem.element('note-word')}><Word className={bem.element('word', 'success')} onClick={() => undefined}>be</Word> - you made no mistakes past 3 word train</div>
+            <div className={bem.element('note-word')}><Word className={bem.element('word', 'error')} onClick={() => undefined}>be</Word> - you made at least 1 mistake in past 3 word train</div>
+          </div>
         </div>
         <WordFormsBlock prevResults={prevResults} onClick={this.onFormClicked} bem={bem} blockTitle="👌 Selected" words={selected} className={bem.element('block-selected')}/>
         <WordFormsBlock prevResults={prevResults} onClick={this.onFormClicked} bem={bem} blockTitle="💡 Available" words={availableWords}/>
