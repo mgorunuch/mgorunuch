@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: center;
   opacity: .9;
+  margin: 1em 1em 1em 0;
 
   .icon {
     color: #fff;
@@ -21,9 +22,5 @@
 
   &:hover {
     opacity: 1;
-  }
-
-  & + .stack-item {
-    margin-left: 20px;
   }
 }
