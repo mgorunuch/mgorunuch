@@ -1,0 +1,17 @@
+.irregular-table {
+  &__col {
+    border: solid 1px #fff;
+    padding: .5em;
+    min-width: 220px;
+  }
+
+  &__back-button {
+    margin: 1em 0;
+    width: 100%;
+    background: 0;
+    border: solid 1px #fff;
+    color: #fff;
+    padding: .5em;
+    cursor: pointer;
+  }
+}

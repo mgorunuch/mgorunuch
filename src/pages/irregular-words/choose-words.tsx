@@ -8,12 +8,38 @@ const prevUsageSelectedKey = 'irreg-prev-usage-words';
 
 interface ComponentProps {
   onWordsSelected: (selectedWords: WordForm[]) => void;
+  onTableStart: (selectedWords: WordForm[]) => void;
 }
 type Props = ComponentProps & WithBemProps;
 
 const Word: React.ComponentType<{ className: string, onClick: () => void }> = (props) => {
   return (
     <button type="button" onClick={props.onClick} className={props.className}>{props.children}</button>
+  );
+};
+
+const Block: React.ComponentType<{ bem: Bem, className?: string, title: string }> = (props) => {
+  const {
+    bem,
+    children,
+    className,
+    title,
+  } = props;
+
+  const classNames = [bem.element('block')];
+  if (className) {
+    classNames.push(className);
+  }
+
+  return (
+    <div className={classNames.join(' ')}>
+      <div className={bem.element('block-header')}>
+        <div className={bem.element('block-title')}>{title}</div>
+      </div>
+      <div className={bem.element('block-content')}>
+        {children}
+      </div>
+    </div>
   );
 };
 
@@ -56,14 +82,9 @@ const WordFormsBlock: React.ComponentType<WFMProps> = (props) => {
   }
 
   return (
-    <div className={classNames.join(' ')}>
-      <div className={bem.element('block-header')}>
-        <div className={bem.element('block-title')}>{blockTitle}</div>
-      </div>
-      <div className={bem.element('block-content')}>
-        {$words.length ? $words : <span className={bem.element('block-nothing')}>Nothing... 😬</span>}
-      </div>
-    </div>
+    <Block bem={bem} className={className} title={blockTitle}>
+      {$words.length ? $words : <span className={bem.element('block-nothing')}>Nothing... 😬</span>}
+    </Block>
   );
 };
 
@@ -121,6 +142,19 @@ class ChooseWords extends React.Component<Props, State> {
     onWordsSelected(selected);
   };
 
+  goTable = () => {
+    const {
+      onTableStart,
+    } = this.props;
+    const {
+      selected,
+    } = this.state;
+
+    localStorage.setItem(prevUsageSelectedKey, JSON.stringify(selected))
+
+    onTableStart(selected);
+  };
+
   render() {
     const {
       bem,
@@ -147,13 +181,22 @@ class ChooseWords extends React.Component<Props, State> {
         </div>
         <WordFormsBlock prevResults={prevResults} onClick={this.onFormClicked} bem={bem} blockTitle="👌 Selected" words={selected} className={bem.element('block-selected')}/>
         <WordFormsBlock prevResults={prevResults} onClick={this.onFormClicked} bem={bem} blockTitle="💡 Available" words={availableWords}/>
-        <div className={bem.element('block-footer')}>
+        <Block bem={bem} title="Info">
+          Here you can show table for selected words...
+          <br/>
+          <br/>
+          <button type="button" onClick={this.goTable} className={bem.element('continue-button')}>Show table 🍬</button>
+        </Block>
+        <Block bem={bem} title="Trainer">
+          Here you can train/check your knowledge...
+          <br/>
+          <br/>
           {
             selected.length > 1
-              ? <button type="button" onClick={this.closeForm} className={bem.element('continue-button')}>Lets start  🚀</button>
+              ? <button type="button" onClick={this.closeForm} className={bem.element('continue-button')}>Start train 🚀</button>
               : <span>Select at least 2 words</span>
           }
-        </div>
+        </Block>
       </div>
     );
   }
