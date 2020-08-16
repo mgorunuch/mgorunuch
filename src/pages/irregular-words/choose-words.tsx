@@ -1,5 +1,5 @@
 import React from 'react';
-import {WordForm, formsFormatted} from './utils';
+import {WordForm, formsFormatted, TrainStatusMap, getTrainStatuses} from './utils';
 import {WithBemProps, withThemedBem} from '../../utils/hocks/with-bem';
 import './choose-words.scss';
 import {Bem} from '@igor-gerasimovich/bem-helper';
@@ -23,6 +23,7 @@ interface WFMProps {
   blockTitle: string;
   onClick: (form: WordForm) => void;
   words: WordForm[];
+  prevResults: TrainStatusMap;
 }
 const WordFormsBlock: React.ComponentType<WFMProps> = (props) => {
   const {
@@ -31,11 +32,21 @@ const WordFormsBlock: React.ComponentType<WFMProps> = (props) => {
     words,
     className,
     blockTitle,
+    prevResults,
   } = props;
 
   const $words = words.map((word) => {
+    let wordMod: string | undefined = undefined;
+    const hasError = prevResults[word.forms[0]].some(v => !v);
+    if (hasError) {
+      wordMod = 'error';
+    }
+    if (!hasError && prevResults[word.forms[0]].length >= 3) {
+      wordMod = 'success';
+    }
+
     return (
-      <Word key={word.word} className={bem.element('word')} onClick={() => onClick(word)}>{word.word}</Word>
+      <Word key={word.word} className={bem.element('word', wordMod)} onClick={() => onClick(word)}>{word.word}</Word>
     )
   })
 
@@ -58,6 +69,7 @@ const WordFormsBlock: React.ComponentType<WFMProps> = (props) => {
 
 interface State {
   selected: WordForm[];
+  prevResults: TrainStatusMap;
 }
 
 class ChooseWords extends React.Component<Props, State> {
@@ -73,6 +85,7 @@ class ChooseWords extends React.Component<Props, State> {
 
     this.state = {
       selected,
+      prevResults: getTrainStatuses(),
     }
   }
 
@@ -114,6 +127,7 @@ class ChooseWords extends React.Component<Props, State> {
     } = this.props;
     const {
       selected,
+      prevResults,
     } = this.state;
 
     const map: {[key: string]: boolean} = {};
@@ -123,8 +137,11 @@ class ChooseWords extends React.Component<Props, State> {
 
     return (
       <div className={bem.block()}>
-        <WordFormsBlock onClick={this.onFormClicked} bem={bem} blockTitle="👌 Selected" words={selected} className={bem.element('block-selected')}/>
-        <WordFormsBlock onClick={this.onFormClicked} bem={bem} blockTitle="💡 Available" words={availableWords}/>
+        <div className={bem.element(['block-notes', 'block'])}>
+          This app used in browser memory. I am recommend you to use one browser every time you trained or install website as application to store your results.
+        </div>
+        <WordFormsBlock prevResults={prevResults} onClick={this.onFormClicked} bem={bem} blockTitle="👌 Selected" words={selected} className={bem.element('block-selected')}/>
+        <WordFormsBlock prevResults={prevResults} onClick={this.onFormClicked} bem={bem} blockTitle="💡 Available" words={availableWords}/>
         <div className={bem.element('block-footer')}>
           {
             selected.length > 1

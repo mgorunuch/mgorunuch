@@ -1,8 +1,15 @@
 .irregular-results {
+  display: flex;
+  flex-wrap: wrap;
+
   &__answer {
-    &:not(:last-child) {
-      margin-bottom: 1em;
-    }
+    border: solid 1px #fff;
+    padding: 1em;
+    margin: .5em;
+  }
+
+  &__answer-title {
+    margin-bottom: 0.5em;
   }
 
   &__answer-form {

@@ -37,6 +37,14 @@
     border: 0;
     background: transparent;
 
+    &--error {
+      border: solid 1px #9b3a42;
+    }
+
+    &--success {
+      border: solid 1px #459b3a;
+    }
+
     &--selected {
       color: #459b3a;
       font-weight: bold;
@@ -54,5 +62,10 @@
     color: #fff;
     padding: 1em;
     cursor: pointer;
+  }
+
+  &__block-notes {
+    display: flex;
+    justify-content: center;
   }
 }

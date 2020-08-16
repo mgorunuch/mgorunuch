@@ -3,6 +3,7 @@ import {WithBemProps, withThemedBem} from '../../utils/hocks/with-bem';
 import {AnswerResult} from './trainer';
 import {Bem} from '@igor-gerasimovich/bem-helper';
 import './results.scss';
+import {mergeTrainStatusesWithAnswers} from './utils';
 
 
 interface AnswerFormProps {
@@ -48,9 +49,12 @@ const Answer: React.ComponentType<AnswerProps> = (props) => {
 
   return (
     <div className={bem.element('answer')}>
-      <AnswerForm bem={bem} enteredForm={answer.answers[0]} withHint={answer.usedHints[0]} form={answer.word.forms[0]} />
-      <AnswerForm bem={bem} enteredForm={answer.answers[1]} withHint={answer.usedHints[1]} form={answer.word.forms[1]} />
-      <AnswerForm bem={bem} enteredForm={answer.answers[2]} withHint={answer.usedHints[2]} form={answer.word.forms[2]} />
+      <div className={bem.element('answer-title')}>{answer.word.word}</div>
+      <div className={bem.element('answer-content')}>
+        <AnswerForm bem={bem} enteredForm={answer.answers[0]} withHint={answer.usedHints[0]} form={answer.word.forms[0]} />
+        <AnswerForm bem={bem} enteredForm={answer.answers[1]} withHint={answer.usedHints[1]} form={answer.word.forms[1]} />
+        <AnswerForm bem={bem} enteredForm={answer.answers[2]} withHint={answer.usedHints[2]} form={answer.word.forms[2]} />
+      </div>
     </div>
   );
 };
@@ -61,6 +65,14 @@ interface ComponentProps {
 type Props = ComponentProps & WithBemProps;
 
 class Results extends React.Component<Props, any> {
+  componentDidMount() {
+    const {
+      answers,
+    } = this.props;
+
+    mergeTrainStatusesWithAnswers(answers);
+  }
+
   render() {
     const {
       bem,
