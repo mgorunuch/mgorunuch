@@ -1,9 +1,6 @@
 const express = require('express');
-const favicon = require('express-favicon');
 const path = require('path');
 const port = process.env.PORT || 8080;
-
-// здесь у нас происходит импорт пакетов и определяется порт нашего сервера
 
 const app = express();
 
@@ -12,7 +9,7 @@ app.use(express.static(__dirname));
 app.use(express.static(path.join(__dirname, 'build')));
 
 app.use((req, res, next) => {
-  if (req.header('x-forwarded-proto') !== 'https')
+  if (!req.connection.encrypted)
     res.redirect(`https://${req.header('host')}${req.url}`)
   else
     next()
