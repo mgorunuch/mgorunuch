@@ -5,6 +5,7 @@ import Home from "../../pages/home/home";
 import LifeWheel from "../../pages/life-wheel/life-wheel";
 import PriorityDetector from "../../pages/priority-detector/priority-detector";
 import IrregularWords from "../../pages/irregular-words";
+import ContactsPage from '../../pages/contacts/contacts';
 
 class RouterContainer extends React.Component {
   render() {
@@ -13,6 +14,7 @@ class RouterContainer extends React.Component {
         <Router>
           <Switch>
             <Route exact path="/" component={Home} />
+            <Route exact path="/contacts" component={ContactsPage} />
             <Route exact path="/wheel" component={LifeWheel} />
             <Route exact path="/priority" component={PriorityDetector} />
             <Route exact path="/irregular-verbs" component={IrregularWords} />
