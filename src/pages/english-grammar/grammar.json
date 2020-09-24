@@ -4,46 +4,60 @@
       "simple": {
         "keys_en": ["simple", "regular"],
         "keys_ru": ["обычное", "регулярное"],
-        "explain_ru": "Используют для выражения обычного, регулярно повторяющегося действия.",
+        "explain_ru": "Время Present Simple обозначает действие в настоящем в широком смысле слова. Оно употребляется для обозначения обычных, регулярно повторяющихся или постоянных действий, например, когда мы говорим о чьих-либо привычках, режиме дня, расписании и т. д., т. е. Present Simple обозначает действия, которые происходят в настоящее время, но не привязаны именно к моменту речи.",
         "explain_en": "Nope",
         "verb": "do/does",
         "suffix": "- / -s",
         "examples_en": [
-          "I work. He writes."
+          "I live in London.",
+          "The meeting starts at 6 o'clock."
         ],
         "examples_ru": [
-          "I work. He writes."
+          "Я живу в Лондоне.",
+          "Собрание начнется в шесть часов."
         ]
       },
       "continuous": {
         "keys_en": [],
         "keys_ru": [],
-        "explain_ru": "используют для выражения действия, происходящего в данный момент.",
+        "explain_ru": "Времена группы Continuous указывают на процесс, действие, длящееся в определенный момент в прошлом, настоящем или будущем. Обычно указывает на процесс, длящийся непосредственно в момент речи. На это могут указывать контекст или такие слова, как:",
         "explain_en": "Nope",
         "verb": "be (is / am / are)",
         "suffix": "-ing",
-        "examples_en": ["I am working. He is writing."],
-        "examples_ru": []
+        "examples_en": ["Sally is doing her homework at the moment.", "Dad and me are fishing now."],
+        "examples_ru": ["Салли сейчас делает домашнее задание.","Мы с папой сейчас рыбачим."]
       },
       "perfect": {
         "keys_en": [],
         "keys_ru": [],
-        "explain_ru": "используют для выражения совершенного (или еще совершающегося) действия, результат которого связан с настоящим.",
+        "explain_ru": "Время Present Perfect обозначает действие, которое завершилось к настоящему моменту или завершено в период настоящего времени. Хотя английские глаголы в Present Perfect обычно переводятся на русский язык в прошедшем времени, следует помнить, что в английском языке эти действия воспринимаются в настоящем времени, так как привязаны к настоящему результатом этого действия.",
         "explain_en": "Nope",
         "verb": "have/has",
         "suffix": "-ed / V3",
-        "examples_en": ["I have worked. He has written."],
-        "examples_ru": []
+        "examples_en": [
+          "I have already done my homework.",
+          "We have no classes today, our teacher has fallen ill."
+        ],
+        "examples_ru": [
+          "Я уже сделал домашнее задание.",
+          "У нас сегодня не будет уроков, наш учитель заболел."
+        ]
       },
       "perfectContinuous": {
         "keys_en": [],
         "keys_ru": [],
-        "explain_ru": "используют для выражения действия, начавшегося в прошлом и продолжающегося в настоящее время, либо важна продолжительность действия.",
+        "explain_ru": "Время Present Perfect Continuous указывает на действие, которое началось в прошлом, продолжалось в течение некоторого времени и либо закончилось непосредственно перед разговором или все еще продолжается в момент разговора.",
         "explain_en": "Nope",
         "verb": "have been / has been",
         "suffix": "-ing",
-        "examples_en": ["I have been working. He has been writing."],
-        "examples_ru": []
+        "examples_en": [
+          "I have been waiting here for 2 hours!",
+          "We have been preparing for our exam since morning."
+        ],
+        "examples_ru": [
+          "Я прождал здесь два часа!",
+          "Мы готовились к экзамену с самого утра."
+        ]
       }
     }
   },
