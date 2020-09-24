@@ -1,0 +1,60 @@
+.english-grammar-page {
+  $rowColor: #1e7a2d;
+  $colColor: #751515;
+  $timesColor: #fff;
+  $hoverColor: #222222;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  label:not(:last-child) {
+    margin-right: 1em;
+  }
+
+  &__header {
+    font-size: 2em;
+    margin: 1em;
+  }
+
+  &__val-title, &__val-val {
+    border-top: solid 1px $rowColor;
+    border-bottom: solid 1px $rowColor;
+    border-left: solid 1px $colColor;
+    border-right: solid 1px $colColor;
+  }
+
+  &__val-title {
+    border-left: solid 0;
+    border-right: solid 0;
+  }
+
+  &__table {
+    margin-top: 1em;
+  }
+
+  &__table td, &__table th {
+    padding: .5em;
+  }
+
+  &__table tr:not(:first-child):hover td {
+    background: $hoverColor;
+  }
+
+  &__time-first-row td {
+    border-top: solid 3px $timesColor;
+  }
+
+  &__table tr:last-child td {
+    border-bottom: solid 3px $timesColor;
+  }
+
+  &__type-name {
+    border-left: solid 1px $colColor;
+    border-right: solid 1px $colColor;
+  }
+
+  &__type-title {
+    border-top: solid 1px $rowColor;
+    border-bottom: solid 1px $rowColor;
+  }
+}

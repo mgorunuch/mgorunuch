@@ -14,3 +14,16 @@ body {
 * {
   box-sizing: border-box;
 }
+
+.home-container {
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+  z-index: 99999;
+}
+
+.home-link {
+  color: #fff;
+  background: rgba(0,0,0,.5);
+  padding: .5em;
+}

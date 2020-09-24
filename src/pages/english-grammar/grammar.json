@@ -1,0 +1,146 @@
+{
+  "present": {
+    "types": {
+      "simple": {
+        "keys_en": ["simple", "regular"],
+        "keys_ru": ["обычное", "регулярное"],
+        "explain_ru": "Используют для выражения обычного, регулярно повторяющегося действия.",
+        "explain_en": "Nope",
+        "verb": "do/does",
+        "suffix": "- / -s",
+        "examples_en": [
+          "I work. He writes."
+        ],
+        "examples_ru": [
+          "I work. He writes."
+        ]
+      },
+      "continuous": {
+        "keys_en": [],
+        "keys_ru": [],
+        "explain_ru": "используют для выражения действия, происходящего в данный момент.",
+        "explain_en": "Nope",
+        "verb": "be (is / am / are)",
+        "suffix": "-ing",
+        "examples_en": ["I am working. He is writing."],
+        "examples_ru": []
+      },
+      "perfect": {
+        "keys_en": [],
+        "keys_ru": [],
+        "explain_ru": "используют для выражения совершенного (или еще совершающегося) действия, результат которого связан с настоящим.",
+        "explain_en": "Nope",
+        "verb": "have/has",
+        "suffix": "-ed / V3",
+        "examples_en": ["I have worked. He has written."],
+        "examples_ru": []
+      },
+      "perfectContinuous": {
+        "keys_en": [],
+        "keys_ru": [],
+        "explain_ru": "используют для выражения действия, начавшегося в прошлом и продолжающегося в настоящее время, либо важна продолжительность действия.",
+        "explain_en": "Nope",
+        "verb": "have been / has been",
+        "suffix": "-ing",
+        "examples_en": ["I have been working. He has been writing."],
+        "examples_ru": []
+      }
+    }
+  },
+  "past": {
+    "types": {
+      "simple": {
+        "keys_en": ["past"],
+        "keys_ru": ["прошлое"],
+        "explain_ru": "используют для выражения действия, произошедшего в прошлом.",
+        "explain_en": "Nope",
+        "verb": "did",
+        "suffix": "-ed / V2",
+        "examples_en": [
+          "I worked. He wrote."
+        ],
+        "examples_ru": [
+          "I worked. He wrote."
+        ]
+      },
+      "continuous": {
+        "keys_en": [],
+        "keys_ru": [],
+        "explain_ru": "используют для выражения действия, происходившего в определенный момент времени в прошлом.",
+        "explain_en": "Nope",
+        "verb": "was/were",
+        "suffix": "-ing",
+        "examples_en": ["I was working. He was writing."],
+        "examples_ru": []
+      },
+      "perfect": {
+        "keys_en": [],
+        "keys_ru": [],
+        "explain_ru": "используют для выражения действия, закончившегося ранее другого действия или определенного момента в прошлом.",
+        "explain_en": "Nope",
+        "verb": "had",
+        "suffix": "-ed / V3",
+        "examples_en": ["I had worked. He had written."],
+        "examples_ru": []
+      },
+      "perfectContinuous": {
+        "keys_en": [],
+        "keys_ru": [],
+        "explain_ru": "используют для выражения действия, начавшегося в определенный момент в прошлом и продолжавшегося какое-то время до начала другого действия.",
+        "explain_en": "Nope",
+        "verb": "had been",
+        "suffix": "-ing",
+        "examples_en": ["I had been working. He had been writing."],
+        "examples_ru": []
+      }
+    }
+  },
+  "future": {
+    "types": {
+      "simple": {
+        "keys_en": ["future"],
+        "keys_ru": ["будущее"],
+        "explain_ru": "Используют для выражения действия, которое произойдет в будущем.",
+        "explain_en": "Nope",
+        "verb": "will/shall",
+        "suffix": "-",
+        "examples_en": [
+          "I will work. He will write."
+        ],
+        "examples_ru": [
+          "I will work. He will write."
+        ]
+      },
+      "continuous": {
+        "keys_en": [],
+        "keys_ru": [],
+        "explain_ru": "используют для выражения действия, которое будет происходить в определенный момент времени в будущем.",
+        "explain_en": "Nope",
+        "verb": "will be / shall be",
+        "suffix": "-ing",
+        "examples_en": ["I will be working He will be writing"],
+        "examples_ru": []
+      },
+      "perfect": {
+        "keys_en": [],
+        "keys_ru": [],
+        "explain_ru": "используют для выражения действия, которое завершится к определенному моменту времени в будущем.",
+        "explain_en": "Nope",
+        "verb": "will have / shall have",
+        "suffix": "-ed / V3",
+        "examples_en": ["I will have worked. He will have written."],
+        "examples_ru": []
+      },
+      "perfectContinuous": {
+        "keys_en": [],
+        "keys_ru": [],
+        "explain_ru": "используют для выражения действия, которое, начавшись в определенный момент, все еще будет продолжаться в какой-то момент времени в будущем.",
+        "explain_en": "Nope",
+        "verb": "will have been / shall have been",
+        "suffix": "-ing",
+        "examples_en": ["I will have been working. He will have been writing."],
+        "examples_ru": []
+      }
+    }
+  }
+}
