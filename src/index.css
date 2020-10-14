@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Inconsolata:400,700&display=swap');
 
+html, body, #root, .app-container {
+  height: 100%;
+}
+
 body {
   margin: 0;
   font-family: 'Inconsolata', source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace,
@@ -13,6 +17,10 @@ body {
 
 * {
   box-sizing: border-box;
+}
+
+button {
+  outline: none;
 }
 
 .home-container {

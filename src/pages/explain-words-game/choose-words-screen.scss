@@ -1,0 +1,46 @@
+.choose-words-screen {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  &__go-back-block {}
+
+  &__functional-block {
+    margin: 1em;
+  }
+
+  &__functional-button, &__word, &__go-back-button {
+    cursor: pointer;
+  }
+
+  &__functional-button, &__go-back-button {
+    border: solid 0;
+    background: transparent;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  &__go-back-button {
+    padding: 1em;
+    text-decoration: underline;
+    font-weight: 400;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &__word {
+    background: transparent;
+    border: dashed 1px #fff;
+    color: #fff;
+    margin: 0.5em;
+    padding: 0.5em 1em;
+
+    &--selected {
+      border-color: #047F1F;
+      border-style: solid;
+    }
+  }
+}

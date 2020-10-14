@@ -8,6 +8,7 @@ import IrregularWords from "../../pages/irregular-words";
 import ContactsPage from '../../pages/contacts/contacts';
 import EnglishGrammar from '../../pages/english-grammar/english-grammar';
 import {Link} from 'react-router-dom';
+import ExplainWordsGame from '../../pages/explain-words-game';
 
 class RouterContainer extends React.Component {
   render() {
@@ -25,6 +26,7 @@ class RouterContainer extends React.Component {
             <Route exact path="/priority" component={PriorityDetector} />
             <Route exact path="/irregular-verbs" component={IrregularWords} />
             <Route exact path="/english-grammar" component={EnglishGrammar} />
+            <Route exact path="/explain-english-words" component={ExplainWordsGame} />
             <Route path="/404" component={NotFound} />
             <Redirect to="/404" />
           </Switch>

@@ -1,0 +1,62 @@
+.explain-words-game {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+
+  &__main-word {
+    font-size: 2.5em;
+  }
+
+  &__sub-word {
+    font-size: 1.5em;
+    margin: 0 0.5em;
+    font-weight: 600;
+  }
+
+  &__sub-words {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__main-word-title, &__sub-words-title {
+    margin-bottom: .5em;
+    font-style: italic;
+  }
+
+  &__sub-words-title {
+    margin-top: 1em;
+  }
+
+  &__main-word-title {
+    margin-top: 4em;
+  }
+
+  &__buttons-container {
+    margin-top: 2em;
+    margin-bottom: 4em;
+  }
+
+  &__button {
+    color: #fff;
+    background: transparent;
+    padding: .5em 1em;
+    margin: 0 .5em;
+    border: solid 1px #fff;
+    cursor: pointer;
+  }
+
+  &__back-button {
+    background: transparent;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

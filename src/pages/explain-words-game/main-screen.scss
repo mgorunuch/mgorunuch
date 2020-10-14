@@ -1,0 +1,25 @@
+.english-explain-main-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &__functional-block {
+    margin-top: 1em;
+    cursor: pointer;
+  }
+
+  &__functional-button {
+    background: transparent;
+    color: #fff;
+    border: solid 1px;
+    padding: 0.5em 1em;
+    margin: 0.5em;
+    cursor: pointer;
+
+    &--disabled {
+      cursor: not-allowed;
+      opacity: 0.3;
+    }
+  }
+}

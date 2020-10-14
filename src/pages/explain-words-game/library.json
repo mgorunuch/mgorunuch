@@ -1,0 +1,66 @@
+[
+  {
+    "main_word": "bus",
+    "forbidden_words": ["some", "some2", "some3"]
+  },
+  {
+    "main_word": "bus2",
+    "forbidden_words": ["some3", "some", "some2"]
+  },
+  {
+    "main_word": "bus3",
+    "forbidden_words": ["some3", "some", "some2"]
+  },
+  {
+    "main_word": "bus4",
+    "forbidden_words": ["some3", "some", "some2"]
+  },
+  {
+    "main_word": "bus5",
+    "forbidden_words": ["some3", "some", "some2"]
+  },
+  {
+    "main_word": "bus6",
+    "forbidden_words": ["some3", "some", "some2"]
+  },
+  {
+    "main_word": "bus7",
+    "forbidden_words": ["some3", "some", "some2"]
+  },
+  {
+    "main_word": "bus8",
+    "forbidden_words": ["some3", "some", "some2"]
+  },
+  {
+    "main_word": "bus9",
+    "forbidden_words": ["some3", "some", "some2"]
+  },
+  {
+    "main_word": "bus10",
+    "forbidden_words": ["some3", "some", "some2"]
+  },
+  {
+    "main_word": "bus11",
+    "forbidden_words": ["some3", "some", "some2"]
+  },
+  {
+    "main_word": "bus12",
+    "forbidden_words": ["some3", "some", "some2"]
+  },
+  {
+    "main_word": "bus13",
+    "forbidden_words": ["some3", "some", "some2"]
+  },
+  {
+    "main_word": "bus14",
+    "forbidden_words": ["some3", "some", "some2"]
+  },
+  {
+    "main_word": "bus15",
+    "forbidden_words": ["some3", "some", "some2"]
+  },
+  {
+    "main_word": "bus16",
+    "forbidden_words": ["some3", "some", "some2"]
+  }
+]
