@@ -1,0 +1,23 @@
+.raw-skills-list {
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: wrap;
+}
+
+.raw-skill {
+  display: flex;
+  flex-direction: column;
+
+  &:not(:first-child) {
+    margin-left: 1em;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 1em;
+  }
+
+  &__level {
+    font-size: 0.9em;
+  }
+}
