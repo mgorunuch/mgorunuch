@@ -1,8 +1,17 @@
 .contact {
   color: #fff;
   display: flex;
+  text-decoration: none;
 
   .icon {
     margin-right: 1em;
+  }
+
+  &__text {
+    border-bottom: dashed 1px rgba(255,255,255,.7);
+  }
+
+  &:hover &__text {
+    border-bottom: solid 1px #fff;
   }
 }

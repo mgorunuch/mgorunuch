@@ -29,7 +29,7 @@ class Contact extends React.PureComponent<ComponentProps> {
     return (
       <a target="_blank" className={classNames.join(' ')} href={linkUrl}>
         <Icon name={iconName} />
-        {text}
+        <span className={bem.element('text')}>{text}</span>
       </a>
     )
   }

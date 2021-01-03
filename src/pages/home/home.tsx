@@ -36,7 +36,7 @@ class Home extends React.Component {
       <div className="letter-container">
         <LettersAnimation />
         <div className="home-page">
-          <Creator name={<>Igor <br /> Gerasimovich</>} additionalInfo={<>Ukraine, Full stack developer (Backend priority)</>} />
+          <Creator name={<>Igor <br /> Gerasimovich</>} additionalInfo={<>Ukraine, Backend Developer (with Frontend experience)</>} />
           <BlockItem title="Useful links">
             <SocialLinks />
           </BlockItem>

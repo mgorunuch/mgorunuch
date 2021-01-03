@@ -4,10 +4,20 @@
   height: 100%;
   align-items: center;
   justify-content: center;
-  margin-top: 3em;
   flex-direction: column;
+
+  &__inner-block {
+    display: flex;
+    flex-direction: column;
+    margin: 0 2vw;
+  }
 
   &__contact {
     margin-top: 1em;
+    margin-left: 120px;
+  }
+
+  &__creator {
+    margin-bottom: 2em;
   }
 }
