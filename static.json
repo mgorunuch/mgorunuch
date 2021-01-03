@@ -1,4 +1,14 @@
 {
-  "root": "dist/",
-  "https_only": true
+  "root": "build/",
+  "clean_urls": true,
+  "https_only": true,
+  "routes": {
+    "/static/*": "/static/",
+    "/*.ico": "/",
+    "/*.png": "/",
+    "/*.json": "/",
+    "/*.js": "/",
+    "/*.txt": "/",
+    "/**": "index.html"
+  }
 }
