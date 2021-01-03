@@ -21,7 +21,7 @@
     "recharts": "^2.0.0-beta.1"
   },
   "scripts": {
-    "start": "node server.js",
+    "start": "react-scripts start",
     "start:serve": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
