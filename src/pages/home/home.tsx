@@ -5,9 +5,10 @@ import SocialLinks from "./social-links/social-links";
 import StackItems from "./stack-items/stack-items";
 import Creator from "./creator/creator";
 import LettersAnimation from "./letter-animation/letters-animation";
-import MyApps from "./my-apps/my-apps";
 import { Skill } from './types';
 import RawSkillsList from './raw-skills-list';
+import LinksList, {RenderLink} from '../../components/links-list';
+
 
 const mainStack: Skill[] = [
   {level: "High", icon: "golang", name: "Golang"},
@@ -30,6 +31,41 @@ const additionalStack: Skill[] = [
   {level: "Basic", icon: "", name: "C++"},
 ];
 
+const appLinks: RenderLink[] = [
+  {
+    href: "wheel",
+    internal: true,
+    text: "Life wheel",
+  },
+  {
+    href: "priority",
+    internal: true,
+    text: "Life priorities",
+  },
+  {
+    href: "irregular-verbs",
+    internal: true,
+    text: "Irregular verbs trainer",
+  },
+  {
+    href: "explain-english-words",
+    internal: true,
+    text: "Explain english words",
+  },
+  {
+    href: "english-grammar",
+    internal: true,
+    text: "English grammar helper (BETA)",
+  },
+];
+
+const gameLinks: RenderLink[] = [
+  {
+    href: "games/show-random",
+    text: "Show random",
+  },
+].map(v => ({ ...v, internal: true }));
+
 class Home extends React.Component {
   render() {
     return (
@@ -47,7 +83,10 @@ class Home extends React.Component {
             <RawSkillsList skills={additionalStack} />
           </BlockItem>
           <BlockItem title="My apps">
-            <MyApps />
+            <LinksList links={appLinks}/>
+          </BlockItem>
+          <BlockItem title="My games">
+            <LinksList links={gameLinks}/>
           </BlockItem>
         </div>
       </div>

@@ -1,0 +1,74 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 80%;
+}
+
+.app {
+  display: grid;
+  grid-row-gap: 1rem;
+  width: 100%;
+}
+
+.title {
+  text-align: center;
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.subtitle {
+  text-align: center;
+  font-weight: bold;
+  margin: 0 0 .7rem 0;
+}
+
+.userAddForm {
+  display: flex;
+  justify-content: center;
+  margin-bottom: .6rem;
+}
+
+.userInput {
+  background: transparent;
+  border: 0;
+  border-bottom: solid 1px transparentize(#fff, .7);
+  padding: .4rem .7rem;
+  color: #fff;
+}
+
+.userSubmitAdd {
+  color: #1e7a2d;
+  background: transparent;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+.usersList {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  > div + div {
+    margin-left: 1rem;
+  }
+}
+
+
+
+
+.userItem {
+}
+
+.userItemDeleteButton {
+  color: #9b3a42;
+  border: 0;
+  background: 0;
+  padding: 0;
+  cursor: pointer;
+  margin-left: .4em;
+}

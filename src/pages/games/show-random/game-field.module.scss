@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.user {
+  flex-direction: column;
+  border: solid 1px #fff;
+  margin: 1rem;
+  flex-basis: 10rem;
+  text-align: center;
+  align-items: center;
+}
+
+.userTitle {
+  margin: 0 0 .9rem 0;
+  padding: 1rem;
+}
+
+.item {
+  padding: .7rem;
+  width: 100%;
+}
+
+.itemFake {
+  background: transparentize(#fff, .90);
+}
+.itemSelected {
+  background: transparentize(#1e7a2d, .70);;
+}
+.itemDisabled {
+  opacity: .2;
+}
