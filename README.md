@@ -3,7 +3,7 @@ Who am I?
 
 🧠 Brain lover! Every day I spend my free time with a lot of information about the brain. 
 
-🤓 Also, I am a programmer who loves his work (maybe because of this, I don`t have long relationships 😃).
+🤓 Also, I am a programmer who loves his work (~~maybe because of this, I don`t have long relationships~~ 😃).
 
 🤔 I`m not a typical programmer who is only experienced in one area. I want to know maximum of all the programming things.
 
