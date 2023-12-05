@@ -18,13 +18,6 @@ Who am I?
 🌐 Embracing the digital world with a zest for life and an ever-curious mind, ready for whatever comes next, with my wonderful wife by my side.
 
 
-⚙️My main stack is:
---------
-- Golang
-- Javascript (Typescript)
-- React / Vue
-- PostgreSQL / MySQL
-
 📚 My articles
 ------
 - [Typescript OOP. Event Bus.](https://medium.com/@mgorunuch.igor/typescript-oop-event-bus-e86fb8f618fb)
