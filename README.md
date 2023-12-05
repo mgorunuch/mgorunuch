@@ -1,11 +1,14 @@
 Who am I?
 --------
 
-🧠 Brain lover! Every day I spend my free time with a lot of information about the brain. 
-
-🤓 Also, I am a programmer who loves his work (~~maybe because of this, I don`t have long relationships~~ 😃).
-
-🤔 I`m not a typical programmer who is only experienced in one area. I want to know maximum of all the programming things.
+🧠 Brain enthusiast! Fascinated by neuroscience and cognition, I love exploring the mysteries of the mind in my free time.
+💍 Happily married (_almost_)!
+👨‍💻 A programmer who thrives on variety and challenge. I'm not just focused on one area - I aim to master the broad spectrum of tech.
+🚀 Remote innovator. Excelling in digital spaces, I bring creativity and forward-thinking to every project.
+🌟 Lifelong learner, constantly seeking new knowledge in both technology and beyond.
+🤝 Team mentor and collaborator. I enjoy sharing knowledge and growing with others in the tech community.
+🔗 Passionate about connecting technology, people, and new ideas, understanding the big picture is my forte.
+🌐 Embracing the digital world with a zest for life and an ever-curious mind, ready for whatever comes next, with my wonderful wife by my side.
 
 
 ⚙️My main stack is:
