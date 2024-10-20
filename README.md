@@ -3,7 +3,7 @@ Who am I?
 
 🧠 Brain enthusiast! Fascinated by neuroscience and cognition, I love exploring the mysteries of the mind in my free time.
 
-💍 Happily married (_almost_)!
+💍 Happily married!
 
 👨‍💻 A programmer who thrives on variety and challenge. I'm not just focused on one area - I aim to master the broad spectrum of tech.
 
