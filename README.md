@@ -1,27 +1,22 @@
-Who am I?
---------
+# Hi, I'm Ihor 👋
 
-🧠 Brain enthusiast! Fascinated by neuroscience and cognition, I love exploring the mysteries of the mind in my free time.
+CTO passionate about transforming ideas into scalable platforms that create measurable impact. Building technology that strengthens family bonds.
 
-💍 Happily married!
+## 🚀 What I'm Known For
+- Scaled platforms reaching 40K+ creators and 10M+ audience
+- Modern tech stack expert (NextJS, NestJS, AWS)
+- Practical AI applications with measurable results
 
-👨‍💻 A programmer who thrives on variety and challenge. I'm not just focused on one area - I aim to master the broad spectrum of tech.
+## 💡 Currently Working On
+Leading development at QuestCore - improving parent-child relationships through technology
 
-🚀 Remote innovator. Excelling in digital spaces, I bring creativity and forward-thinking to every project.
+## 🛠 Tech Stack
+NextJS • NestJS • AWS • AI/ML • React • Node.js
 
-🌟 Lifelong learner, constantly seeking new knowledge in both technology and beyond.
+## 🌟 Core Principles
+- Technology should deliver practical, measurable impact
+- Business success and social impact can coexist
+- Focus on concrete results over theoretical possibilities
 
-🤝 Team mentor and collaborator. I enjoy sharing knowledge and growing with others in the tech community.
-
-🔗 Passionate about connecting technology, people, and new ideas, understanding the big picture is my forte.
-
-🌐 Embracing the digital world with a zest for life and an ever-curious mind, ready for whatever comes next, with my wonderful wife by my side.
-
-
-📚 My articles
-------
-- [Typescript OOP. Event Bus.](https://medium.com/@mgorunuch.igor/typescript-oop-event-bus-e86fb8f618fb)
-- [Typescript OOP. Event Bus.](https://medium.com/@mgorunuch.igor/typescript-oop-event-bus-e86fb8f618fb)
-- [Typescript OOP. Observer.](https://medium.com/@mgorunuch.igor/typescript-oop-observer-ac60ca6cb264)
-- [4 problems when working with API architecture in typescript](https://medium.com/@mgorunuch.igor/4-problems-when-working-with-api-architecture-in-typescript-e5d8da41156c)
-
+## 📫 Let's Connect
+[LinkedIn](https://www.linkedin.com/in/mgorunuch/)
