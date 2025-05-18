@@ -1,4 +1,5 @@
 # Hi, I'm Ihor 👋
+## OUTDATED
 
 CTO passionate about transforming ideas into scalable platforms that create measurable impact. Building technology that strengthens family bonds.
 
